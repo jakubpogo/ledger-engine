@@ -14,7 +14,7 @@ services:
       - ledger-net
     environment:
       - MAX_HEAP_SIZE=1536M
-      - MAX_NEWSIZE=384M
+      - HEAP_NEWSIZE=384M
     healthcheck:
       test: ["CMD-SHELL", "cqlsh -e 'DESCRIBE KEYSPACES;'"]
       interval: 15s
@@ -25,7 +25,7 @@ services:
     image: apache/kafka:3.7.0
     container_name: kafka_ledger
     ports:
-      -"9092:9092"
+      - "9092:9092"
     networks:
       - ledger-net
     environment:
