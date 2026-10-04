@@ -18,8 +18,8 @@ An event-driven transaction ledger and state engine written in Go, using Apache 
 
 ## Roadmap
 
-- [*] Docker Compose setup for Kafka (KRaft) and Cassandra
-- [*] Base Cassandra schema definitions
+- [x] Docker Compose setup for Kafka (KRaft) and Cassandra
+- [x] Base Cassandra schema definitions
 - [ ] Ingestion gateway with idempotency checks
 - [ ] Ledger worker with balance invariant enforcement
 - [ ] Real-time React dashboard
